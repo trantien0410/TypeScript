@@ -112,35 +112,36 @@ const addNewEmployeeTWithConstraint = <T extends { name: string }>(
 
 const empThree = addNewEmployeeTWithConstraint({ name: "tien", age: 22 });
 
-
 // GENERICS in INTERFACE
 
-interface Resource<T>{
-    uid:number,
-    name:string,
-    data: T
+interface Resource<T> {
+  uid: number;
+  name: string;
+  data: T;
 }
 
-type NumberResource = Resource<number[]>
+type NumberResource = Resource<number[]>;
 
-const numbers: NumberResource ={
-    uid:2,
-    name:'Numbers',
-    data:[1,2,3]
-}
+const numbers: NumberResource = {
+  uid: 2,
+  name: "Numbers",
+  data: [1, 2, 3],
+};
 
-const ResourceOne: Resource<string>={
-    uid:1,
-    name:'person',
-    data:'hello'
-} 
-const ResourceTwo: Resource<object>={
-    uid:1,
-    name:'Movie',
-    data:{name:'Avenger'}
-} 
-const ResourceThree: Resource<string[]>={
-    uid:1,
-    name:'Developer',
-    data:['CSS']
-} 
+const ResourceOne: Resource<string> = {
+  uid: 1,
+  name: "person",
+  data: "hello",
+};
+const ResourceTwo: Resource<object> = {
+  uid: 1,
+  name: "Movie",
+  data: { name: "Avenger" },
+};
+const ResourceThree: Resource<string[]> = {
+  uid: 1,
+  name: "Developer",
+  data: ["CSS"],
+};
+
+const test = 123;
