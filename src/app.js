@@ -72,21 +72,21 @@ var addNewEmployeeTWithConstraint = function (employee) {
 var empThree = addNewEmployeeTWithConstraint({ name: "tien", age: 22 });
 var numbers = {
     uid: 2,
-    name: 'Numbers',
+    name: "Numbers",
     data: [1, 2, 3]
 };
 var ResourceOne = {
     uid: 1,
-    name: 'person',
-    data: 'hello'
+    name: "person",
+    data: "hello"
 };
 var ResourceTwo = {
     uid: 1,
-    name: 'Movie',
-    data: { name: 'Avenger' }
+    name: "Movie",
+    data: { name: "Avenger" }
 };
 var ResourceThree = {
     uid: 1,
-    name: 'Developer',
-    data: ['CSS']
+    name: "Developer",
+    data: ["CSS"]
 };
