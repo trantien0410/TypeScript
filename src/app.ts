@@ -1,3 +1,4 @@
+// Starting from here
 import { Employee } from "./class";
 //GENERICS
 
